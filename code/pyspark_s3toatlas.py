@@ -42,10 +42,10 @@ logger.info("Connecting...")
 
 write_mongo_options = {
     "uri": mongo_uri,
-    "database": "<databasename>",
-    "collection": "<collection name>",
-    "username": "<database username>",
-    "password": "<database password>"
+    "database": "<databasename>",    ## update the Database name ##
+    "collection": "<collection name>",   ## update the Collection name ##
+    "username": "<database username>",   ## update the Database user name ##
+    "password": "<database password>"  ## update the password  ##
 }
 
 # Write DynamicFrame to MongoDB and DocumentDB
