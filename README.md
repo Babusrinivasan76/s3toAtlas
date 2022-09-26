@@ -33,7 +33,7 @@ As of now there are no director connectors are available in AWS Glue Studio to c
 
 ### 1.Upload the sample JSON file to S3 bucket
 
-Upload the sample [airport.json](https://github.com/Babusrinivasan76/atlasgluestudiointegration/tree/main/images/VPC%20Creation#:~:text=1%20minute%20ago-,airports.json,-Add%20files%20via) file to the S3 bucket
+Upload the sample [airport.json](https://github.com/Babusrinivasan76/s3toAtlas/blob/main/code/airports.json) file to the S3 bucket
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/13.S3%20upload.png)
 
 
