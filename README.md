@@ -36,49 +36,8 @@ As of now there are no director connectors are available in AWS Glue Studio to c
 Upload the sample [airport.json](https://github.com/Babusrinivasan76/atlasgluestudiointegration/tree/main/images/VPC%20Creation#:~:text=1%20minute%20ago-,airports.json,-Add%20files%20via) file to the S3 bucket
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/13.S3%20upload.png)
 
-### 2.Setup the AWS Glue Catalog
 
-#### Create the connection to the S3 bucket
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/14.AWS%20Glue%20Connection.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/15.AWS%20Glue%20Connection.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/16.AWS%20Glue%20Connection.png)
-
-
-#### Validate the connection by clicking the "Test Connection"
-
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/17.%20Test%20AWS%20Glue%20Connection.png)
-
-
-#### Create a crawler that runs on demand to pull the data from S3 to Glue Database
-
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/18.%20Create%20Crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/19.%20Create%20Crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/20.create%20crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/21.create%20crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/22.create%20crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/23.create%20crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/24.create%20crawler.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/25.create%20crawler.png)
-
-
-
-#### Run the crawler and validate the database and table after successful completion of the crawler 
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/26.run%20crawler.png)
-
-### 3.Create a Glue Studio Job and run
+### 2.Create a Glue Studio Job and run
 
  Click on the Job from the menu and select "Pyspark Scripts"
 
@@ -103,7 +62,7 @@ Save the job and click "Run"
 Ensure the job ran successfully. You can refer the logs for the troubleshooting
 
 
-### 4.Validate the Data in MongoDB Atlas
+### 3.Validate the Data in MongoDB Atlas
 
 Validate the S3 data are created as a document in MongoDB Atlas
 
