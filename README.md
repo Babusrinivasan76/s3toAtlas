@@ -30,68 +30,13 @@ As of now there are no director connectors are available in AWS Glue Studio to c
 ## Steps for Integration
 
 
-### 1.Setup of AWS Network components
-Setup the VPC, Subnet, NAT Gateway and VPC Endpoints
 
-Login to the AWS console and search for VPC 
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/04.VPC%20Search.png)
-Click on the VPC and click on the "Create VPC" 
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/05.%20create%20VPC%20.png)
-Select the "VPC and more" and choose the parameters as shown.
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/01.VPC%20Creation.png)
-
-Click "Create".
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/02.VPC%20Creationpng.png)
-
-
-
-### 2.Setup of Security Group
-
-Click on  the "Security groups" option on the left side menu.
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/03%20Security%20Group.png)
-
-Ensure the security group routes are enabled for the accessing the database ports
-
-### 3.Creation of MongoDB Atlas
-First and foremost we need to create a MongoDB Atlas cluster (free tier is also available) for setting the MDB Atlas as either source or sink for the ETL process.
-
-Create the MongoDB cluster
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/06.MongoDB%20Atlas%20DB%20Creation.png)
-
-Click "Create Database"
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/07.%20MongoDB%20Database%20creation.png)
-
-Click "Create Cluster"
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/08.Create%20cluster.png)
-
-Other Reference: 
-  1. [Cloudformation Template](https://aws.amazon.com/quickstart/architecture/mongodb-atlas/)
-  2. [MongoDB Atlas console](https://www.mongodb.com/docs/atlas/getting-started/)
-
-
-### 4.setup the Private link
-
-Setup the private link services to secure the connection between MongoDB Atlas and AWS VPC
-
-Select the "Network Access" option from the side menu 
-
-Cick on the "Private Endpoint" and select "Dedicated Cluster"
-
-Select the "Add Private Endpoint" and follow the instruction to create the endpoint. Note, there are some AWS CLI commands to be executed for this creation
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/09.create%20privatelink.png)
-
-Ensure the Private Endpoint is created successfully, before moving to the next step.
-
-Reference: [Link](https://www.mongodb.com/docs/atlas/security-cluster-private-endpoint/)
-
-
-### 5.Upload the sample JSON file to S3 bucket
+### 1.Upload the sample JSON file to S3 bucket
 
 Upload the sample [airport.json](https://github.com/Babusrinivasan76/atlasgluestudiointegration/tree/main/images/VPC%20Creation#:~:text=1%20minute%20ago-,airports.json,-Add%20files%20via) file to the S3 bucket
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/13.S3%20upload.png)
 
-### 6.Setup the AWS Glue Catalog
+### 2.Setup the AWS Glue Catalog
 
 #### Create the connection to the S3 bucket
 
@@ -133,7 +78,7 @@ Upload the sample [airport.json](https://github.com/Babusrinivasan76/atlasgluest
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/26.run%20crawler.png)
 
-### 7.Create a Glue Studio Job and run
+### 3.Create a Glue Studio Job and run
 
  Click on the Job from the menu and select "Pyspark Scripts"
 
@@ -158,7 +103,7 @@ Save the job and click "Run"
 Ensure the job ran successfully. You can refer the logs for the troubleshooting
 
 
-### 8.Validate the Data in MongoDB Atlas
+### 4.Validate the Data in MongoDB Atlas
 
 Validate the S3 data are created as a document in MongoDB Atlas
 
