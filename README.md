@@ -75,4 +75,4 @@ Hope this technical guide helped you in migrating the data into the MongoDB Atla
 
 This solution can be extended to any of the AWS Glue compatible source data , and the same can be migrated to MongoDB Atlas.
 
-For any assistance please reach out to [partners@mongodb.com](partners@mongodb.com)
+For any assistance please reach out to partners@mongodb.com
