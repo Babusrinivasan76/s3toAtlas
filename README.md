@@ -57,9 +57,16 @@ Configure the parameters
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/31.update%20the%20job%20details.png)
 
-Save the job and click "Run"
+Update the following parameters:
 
-Ensure the job ran successfully. You can refer the logs for the troubleshooting
+a. Job name
+b. Role
+c. Retries
+
+
+Save the job and click "Run" on the top right.
+
+Click on the "Runs" tab and ensure the job ran successfully. You can refer the logs in the "Runs" tab for troubleshooting
 
 
 ### 3.Validate the Data in MongoDB Atlas
