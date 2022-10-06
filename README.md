@@ -59,7 +59,8 @@ Configure the parameters
 
 Update the following parameters:
 
-a. name
+a. Name
+
 b. IAM Role
 
 You can keep the default values for all other parameters.
