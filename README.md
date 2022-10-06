@@ -29,15 +29,20 @@ With AWS Glue Studio, we can now create scripts for integrations with all the da
 
 ## Steps for Integration
 
+### 1.Set up the MongoDB Atlas cluster
+
+Please follow the [link](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster) to setup a free cluster in MongoDB Atlas
+
+Configure the database for [network security](https://www.mongodb.com/docs/atlas/security/add-ip-address-to-list/) and [access](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/).
 
 
-### 1.Upload the sample JSON file to S3 bucket
+### 2.Upload the sample JSON file to S3 bucket
 
-Upload the sample [airport.json](https://github.com/Babusrinivasan76/s3toAtlas/blob/main/code/airports.json) file to the S3 bucket
+Upload the sample [airport.json](https://github.com/mongodb-partners/S3toAtlas/blob/main/code/airports.json) file to the S3 bucket
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/13.S3%20upload.png)
 
 
-### 2.Create a Glue Studio Job and run
+### 3.Create a Glue Studio Job and run
 
 Login to [AWS Console](https://aws.amazon.com/console/)
 
@@ -83,7 +88,7 @@ Save the job and click "Run" on the top right.
 Click on the "Runs" tab and ensure the job ran successfully. You can refer the logs in the "Runs" tab for troubleshooting
 
 
-### 3.Validate the Data in MongoDB Atlas
+### 4.Validate the Data in MongoDB Atlas
 
 Validate the S3 data are created as a document in MongoDB Atlas
 
@@ -94,6 +99,6 @@ Validate the S3 data are created as a document in MongoDB Atlas
 
 Hope this technical guide helped you in migrating the data into the MongoDB Atlas cluster using the AWS Glue services.
 
-This solution can be extended to any of the AWS Glue compatible source data , and the same can be migrated to MongoDB Atlas. Refere [link](https://github.com/Babusrinivasan76/atlasgluestudiointegration).
+This solution can be extended to other data sources through AWS Glue Studio - Catalog service. Refer [link](https://github.com/Babusrinivasan76/atlasgluestudiointegration).
 
 For any assistance please reach out to partners@mongodb.com
