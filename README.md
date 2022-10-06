@@ -39,34 +39,44 @@ Upload the sample [airport.json](https://github.com/Babusrinivasan76/s3toAtlas/b
 
 ### 2.Create a Glue Studio Job and run
 
- Click on the Job from the menu and select "Pyspark Scripts"
+Login to [AWS Console](https://aws.amazon.com/console/)
 
- Click "Create Job"
+
+Search for AWS Glue Studio and select from the dropdown (Features --> AWS Glue Studio)
+
+![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/33.AWS%20Glue%20Studio%20Search.png)
+
+
+
+Click on the Job from the menu and select "Spark script editor"
+
+
+Click "Create Job"
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/28.create%20a%20job.png)
 
 
-Copy the Code from the [link](https://github.com/Babusrinivasan76/s3toAtlas/blob/main/code/pyspark_s3toatlas.py) and paste 
+Copy the Code from the [link](https://github.com/mongodb-partners/S3toAtlas/blob/main/code/pyspark_s3toatlas.py) and paste 
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/29.copy%20the%20code.png)
 
 
+Update the code for S3 bucket details (#ds) , MongoDB Atlas Connection  (#mongo_uri), Database, collection, Username and Password details
+
+
 Configure the parameters in "Job details" tab
-
-Update the following parameters:
-
-a. Name
-
-b. IAM Role
-
-You can keep the default values for all other parameters.
-
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/30.update%20the%20job%20details.png)
 
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/31.update%20the%20job%20details.png)
 
+Update the following parameters:
 
+a. Name 
+
+b. IAM Role
+
+You can keep the default values for all other parameters.
 
 Save the job and click "Run" on the top right.
 
