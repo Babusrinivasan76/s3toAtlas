@@ -51,11 +51,7 @@ Copy the Code from the [link](https://github.com/Babusrinivasan76/s3toAtlas/blob
 ![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/29.copy%20the%20code.png)
 
 
-Configure the parameters
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/30.update%20the%20job%20details.png)
-
-![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/31.update%20the%20job%20details.png)
+Configure the parameters in "Job details" tab
 
 Update the following parameters:
 
@@ -64,6 +60,12 @@ a. Name
 b. IAM Role
 
 You can keep the default values for all other parameters.
+
+
+![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/30.update%20the%20job%20details.png)
+
+![](https://github.com/Babusrinivasan76/atlasgluestudiointegration/blob/main/images/VPC%20Creation/31.update%20the%20job%20details.png)
+
 
 
 Save the job and click "Run" on the top right.
