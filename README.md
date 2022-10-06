@@ -59,9 +59,10 @@ Configure the parameters
 
 Update the following parameters:
 
-a. Job name
-b. Role
-c. Retries
+a. name
+b. IAM Role
+
+You can keep the default values for all other parameters.
 
 
 Save the job and click "Run" on the top right.
